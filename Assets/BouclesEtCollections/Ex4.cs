@@ -12,9 +12,9 @@ namespace BouclesEtCollections
             nameList.Add("Alexis");
             nameList.Add("Jordan");
             nameList.Add("Baptiste");
-            foreach (string name in nameList)
+            foreach (string currentName in nameList)
             {
-                print(name);
+                print(currentName);
             }
         }
 

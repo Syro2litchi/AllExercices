@@ -499,7 +499,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86ec954dd59a8c74491e7cd157523bb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ex3
-  Names: []
+  Names:
+  - Jordane
+  - Michel
+  - Francis
 --- !u!114 &863674695
 MonoBehaviour:
   m_ObjectHideFlags: 0

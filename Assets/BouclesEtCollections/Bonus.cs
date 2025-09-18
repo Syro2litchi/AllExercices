@@ -6,25 +6,9 @@ namespace BouclesEtCollections
 {
     public class Bonus : MonoBehaviour
     {
-        
-    }
-    public class Weapon : MonoBehaviour
-    {
-        private int damage;
-        private int clip;
-        private bool ammoInClip;
-        private string name;
-
         private List<Weapon> weaponList = new List<Weapon>();
-        public Weapon(string name, int damage, int clip, bool ammoInClip)
-        {
-            this.damage = damage;
-            this.clip = clip;
-            this.ammoInClip = ammoInClip;
-            this.name = name;
-        }
 
-        void start()
+        private void Start()
         {
             weaponList.Add(new Weapon("Sniper",200, 3, true));
             weaponList.Add(new Weapon("Shotgun",150, 5, true));
@@ -34,6 +18,27 @@ namespace BouclesEtCollections
             {
                 print(weapon);
             }
+        }
+    }
+    public class Weapon
+    {
+        private int _damage;
+        private int _clip;
+        private bool _ammoInClip;
+        private string _name;
+        
+        public Weapon(string name, int damage, int clip, bool ammoInClip)
+        {
+            this._damage = damage;
+            this._clip = clip;
+            this._ammoInClip = ammoInClip;
+            this._name = name;
+        }
+
+        public override string ToString()
+        {
+            return
+                $"{nameof(_damage)}: {_damage}, {nameof(_clip)}: {_clip}, {nameof(_ammoInClip)}: {_ammoInClip}, {nameof(_name)}: {_name}";
         }
     }
 }

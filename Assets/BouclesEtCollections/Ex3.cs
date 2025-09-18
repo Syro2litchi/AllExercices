@@ -5,7 +5,7 @@ namespace BouclesEtCollections
 {
     public class Ex3 : MonoBehaviour
     {
-        public List<string> Names = null;
+        public List<string> Names;
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()

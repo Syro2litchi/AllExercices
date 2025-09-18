@@ -1,7 +1,6 @@
 using System.Collections.Generic;
-using Unity.VisualScripting;
+using System.Linq;
 using UnityEngine;
-using UnityEngine.Playables;
 
 namespace BouclesEtCollections
 {
@@ -10,16 +9,16 @@ namespace BouclesEtCollections
         public List<GameObject> GameObjectList = new List<GameObject>();
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
+        private void Start()
         {
-            foreach (GameObject g in GameObjectList)
+            foreach (GameObject g in GameObjectList.ToList())
             {
                 Destroy(g);
             }
         }
 
         // Update is called once per frame
-        void Update()
+        private void Update()
         {
 
         }

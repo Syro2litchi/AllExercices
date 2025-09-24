@@ -18,7 +18,7 @@ namespace EnumerationEtSwitch
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
-            DayOfWeek today = DayOfWeek.Lundi;
+            DayOfWeek today;
             foreach (var day in Enum.GetValues(typeof(DayOfWeek)))
             {
                 today = (DayOfWeek)day;

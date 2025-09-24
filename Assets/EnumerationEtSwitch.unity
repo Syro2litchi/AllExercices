@@ -545,7 +545,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1225833440}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9649272fb53b28547b71976bbfead614, type: 3}
   m_Name: 
@@ -576,11 +576,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1225833440}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 985d7530dfb1445459bfd4370a9c1f50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bonus
+  WeaponType: 0
 --- !u!1 &1375683036
 GameObject:
   m_ObjectHideFlags: 0

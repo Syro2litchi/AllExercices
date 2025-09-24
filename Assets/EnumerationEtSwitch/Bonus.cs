@@ -1,21 +1,39 @@
+using System;
 using UnityEngine;
 
 namespace EnumerationEtSwitch
 {
     [System.Flags]
-    enum WeaponType
+    public enum WeaponType
     {
-        Sword,
-        Bow,
-        Axe,
-        Staff
+        Sword = 1,
+        Bow = 2,
+        Axe = 4,
+        Staff = 8
     }
     public class Bonus : MonoBehaviour
     {
+
+        public WeaponType WeaponType;
+        
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
             WeaponType myWeapons = WeaponType.Sword | WeaponType.Axe | WeaponType.Bow | WeaponType.Staff;
+
+            switch (myWeapons)
+            {
+                case WeaponType.Sword:
+                    break;
+                case WeaponType.Bow:
+                    break;
+                case WeaponType.Axe:
+                    break;
+                case WeaponType.Staff:
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
             if (myWeapons == (WeaponType)1)
             { 
                 Debug.Log("Je possède une hache !");

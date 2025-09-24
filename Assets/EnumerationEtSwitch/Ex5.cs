@@ -22,10 +22,10 @@ namespace EnumerationEtSwitch
             {
                 switch(i)
                 {
-                    case 0 :
+                    case EnemyType.Goblin :
                         Debug.Log("Petit mais rapide !");
                         break;
-                    case (EnemyType)1 :
+                    case EnemyType.Orc :
                         Debug.Log("Fort et brutal !");
                         break;
                     case (EnemyType)2 :
